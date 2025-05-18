@@ -1,0 +1,106 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0; /* Warna latar belakang ringan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradient latar belakang */
+}
+
+.calculator-container {
+  background: #ffffff; /* Warna putih untuk container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100px;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  margin: 0 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-container button:hover {
+  background: #0056b3;
+}
+
+.result-container {
+  margin-bottom: 20px;
+}
+
+.result-container h2 {
+  color: #333;
+}
+
+.history-container {
+  margin-top: 20px;
+}
+
+.history-container h3 {
+  color: #333;
+}
+
+.history-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-container ul li {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .input-container input {
+    width: 80px;
+  }
+
+  .button-container button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}

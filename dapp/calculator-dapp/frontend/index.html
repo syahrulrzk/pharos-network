@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulator Blockchain (Pharos Testnet)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <h1>Kalkulator Blockchain (Pharos Testnet)</h1>
+
+    <div class="input-container">
+      <input type="number" id="numA" placeholder="Angka A" />
+      <input type="number" id="numB" placeholder="Angka B" />
+    </div>
+
+    <div class="button-container">
+      <button onclick="calculate('add')">Tambah (+)</button>
+      <button onclick="calculate('subtract')">Kurang (-)</button>
+      <button onclick="calculate('multiply')">Kali (×)</button>
+      <button onclick="calculate('divide')">Bagi (÷)</button>
+      <button onclick="getHistory()">📜 Lihat Riwayat</button>
+    </div>
+
+    <div class="result-container">
+      <h2>Hasil: <span id="result">-</span></h2>
+    </div>
+
+    <div class="history-container">
+      <h3>Riwayat Operasi:</h3>
+      <ul id="history">Belum ada riwayat.</ul>
+    </div>
+  </div>
+
+  <!-- Web3.js -->
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.7.0/dist/web3.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
