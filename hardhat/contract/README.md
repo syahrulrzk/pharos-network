@@ -11,3 +11,9 @@ REPORT_GAS=true npx hardhat test
 npx hardhat node
 npx hardhat ignition deploy ./ignition/modules/Token.js
 ```
+
+# Run script Zenith Bulk
+```shell
+~$ cd pharos-network/hardhat/contract
+~$ npx hardhat run scripts/bulkTransfer.js --network pharos
+```
