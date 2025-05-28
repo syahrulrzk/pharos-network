@@ -7,7 +7,7 @@ async function main() {
   console.log(`\n📤 Pengirim: ${deployer.address}\n`);
 
   const zenTokenAddress = "0xdc74ba3eccaad77561eef286f4a638742c200f97";
-  const zenToken = await ethers.getContractAt("ZenithToken", zenTokenAddress);
+  const zenToken = await ethers.getContractAt("contracts/ZenithToken.sol:ZenithToken", zenTokenAddress);
 
   const recipientsData = JSON.parse(fs.readFileSync("scripts/recipients.json", "utf8"));
   const amount = ethers.parseUnits("25", 18); // 25 token dengan 18 desimal
